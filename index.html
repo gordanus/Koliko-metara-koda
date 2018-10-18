@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./jquery-3.3.1.min.js"></script>
+  <script src="./base64.js"></script>
+  <script src="./bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+  <title>Koliko metara koda?</title>
+
+</head>
+
+<body>
+  <div id="wrapper" class="form-group container-fluid well">
+    <h1 class="display-1">Koliko metara koda?</h1>
+    <textarea class="form-control" rows="10" cols="200" id="text" onkeyup="count();" placeholder="Mesto za kod"></textarea>
+    <p id="total">Ukupno karaktera: 0</p>
+    <p id="totalInMeter">Ukupno metara koda: 0.00 m </p>
+    <div class="btn-group btn-block">
+      <button class="btn btn-primary" onclick="store('length')" type="button">Sačuvaj</button>
+      <button class="btn btn-primary" onclick="readData()" type="button">Pokaži podatke</button>
+      <a class="btn btn-primary" href="javascript://Save as TXT" id="submitLink">Sačuvaj kao TXT</a>
+    </div>
+    <br>
+    <div id="output" class="container-fluid well"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#output {
+ margin-top: 30px;
+}
+
+textarea {
+  width: 100%;
+  font-family: monospace;
+}
+
+.btn {
+  margin: 0 5px 0 5px;
+}
+
+@media (max-width: 370px) {
+  .btn-group > .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+  }
+  #submitLink {
+    width: 93%;
+  }
+}
